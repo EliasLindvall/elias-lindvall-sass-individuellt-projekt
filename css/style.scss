@@ -1,0 +1,52 @@
+@import 'functions';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&display=swap');
+
+body {
+    @include margin-padding-zero;
+    height: 500vh;
+}
+
+
+.header {
+    @include cool-blue;
+    @include margin-padding-zero;
+    @include flex-center;
+    height: 75vh;
+    width: 100%;
+}
+
+#navbar {
+    @include margin-paddin-zero;
+    @include cool-blue;
+    overflow: hidden;
+    height: 10vh;
+    position: sticky;
+}
+
+#navbar ul {
+    @include margin-padding-zero;
+    @include flex-center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li a {
+    @include yellowtxt;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+}
+
+#navabr ul li:not(:first-child){
+    float: right;
+}
+
+.small-logo {
+    width: 10px;
+    height: 10px;
+    
+}
+
+.sticky 

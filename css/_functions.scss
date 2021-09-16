@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&display=swap');
+
+@mixin cool-blue {
+    background-color: #244d6f;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin margin-padding-zero {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@mixin yellowtxt {
+    color: #f2ca90;
+    font-family: 'Playfair Display', serif;
+}
+
+@mixin blacktxt {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
