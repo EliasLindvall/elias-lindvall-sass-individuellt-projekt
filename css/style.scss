@@ -7,6 +7,10 @@ body {
     height: 500vh;
 }
 
+h1 {
+    @include yellowtxt
+}
+
 
 .header {
     @include cool-blue;
@@ -17,7 +21,7 @@ body {
 }
 
 #navbar {
-    @include margin-paddin-zero;
+    @include margin-padding-zero;
     @include cool-blue;
     overflow: hidden;
     height: 10vh;
@@ -39,7 +43,7 @@ body {
     padding: 50px;
 }
 
-#navabr ul li:not(:first-child){
+#navbar ul li:not(:first-child){
     float: right;
 }
 
@@ -49,4 +53,12 @@ body {
     
 }
 
-.sticky 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100px;
+}
+
+.img100-width {
+    width: 100vh;
+} 
