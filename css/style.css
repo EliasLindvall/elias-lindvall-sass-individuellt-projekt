@@ -1,27 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&display=swap");
 body {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 0;
   height: 500vh;
+  scroll-behavior: smooth;
 }
 
 .header {
-  background-color: #244d6f;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,59 +19,159 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75vh;
-  width: 100%;
+  background-color: #244d6f;
+  height: 80vh;
 }
 
 #navbar {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #244d6f;
-  overflow: hidden;
-  height: 10vh;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-ul {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style-type: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #244d6f;
+  overflow: hidden;
+  height: 6vw;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar a {
+  color: #f2ca90;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vw;
+  padding-top: 1.65vw;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.91;
+}
+
+.img100-width {
+  width: 100%;
+}
+
+.titleistdriver {
+  text-align: center;
+  position: relative;
+}
+
+.tsi-txt {
+  position: absolute;
+  top: 7vw;
+  right: 4vw;
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 2vw;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.deadspace {
+  height: 5vw;
+  margin: 0;
+  padding: 0;
+  background-color: #244d6f;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2vw;
+  padding-bottom: 20vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border-color: gray;
+  border-style: none;
+  border-bottom: black;
+  -webkit-box-shadow: 2px 3px 10px gray;
+          box-shadow: 2px 3px 10px gray;
+  width: 35vh;
+  height: 60vh;
+  margin-top: 2vw;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-box-shadow: 2px 3px 20px black;
+          box-shadow: 2px 3px 20px black;
+  height: 62vh;
+  width: 37vh;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  border-color: gray;
+  border-style: none;
+}
+
+.item h1 {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 3vh;
+  font-weight: lighter;
+  text-align: center;
+  text-align: center;
+}
+
+.item p {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 1.9vh;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.item hr {
+  margin: 0;
   padding: 0;
 }
 
-li a {
-  color: #f2ca90;
-  font-family: 'Playfair Display', serif;
-  text-decoration: none;
+.heading {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 7vh;
+  font-weight: normal;
   text-align: center;
-  font-size: 2rem;
-  padding: 50px;
-}
-
-.small-logo {
-  width: 10px;
-  height: 10px;
+  position: relative;
+  margin-bottom: 4vw;
+  margin-top: 8vw;
 }
 /*# sourceMappingURL=style.css.map */

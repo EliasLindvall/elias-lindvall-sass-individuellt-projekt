@@ -1,7 +1,7 @@
 // Nar man skrollar aktiveras funktionen
 window.onscroll = function() {stickyNav()};
 
-// Get the navbar
+// hämta navbar från html/css
 var navbar = document.getElementById("navbar");
 
 // Get the offset position of the navbar
