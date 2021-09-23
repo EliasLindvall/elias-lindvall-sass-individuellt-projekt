@@ -1,13 +1,13 @@
-// Nar man skrollar aktiveras funktionen
+// När man skrollar aktiveras funktionen
 window.onscroll = function() {stickyNav()};
 
-// hämta navbar från html/css
+// hämta #navbar från html/css
 var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
+// hämtar positionen av navbaren
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// lägger till klassen sticky på navbaren när man har skrollar till navbarens position och tar bort den när man skrollar upp igen
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")

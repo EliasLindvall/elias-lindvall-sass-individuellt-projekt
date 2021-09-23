@@ -4,18 +4,20 @@ Cool blue: #244d6f
 
 Darker red: #e36548
 
+Light Yellow: #f2ca90
+
 BRANDS:
 
-Titleist
+Titleist / titleist.com
 
-Callaway
+Callaway / callawaygolf.com
 
-Ping
+Ping / ping.com
 
-Cobra
-
-LINKS
+Cobra / cobragolf.com
 
 DOKUMENTERING
 
-första problemet jag stötte på var att navbaren blev jätteliten när jag skrollade. Det visade sig vara ett lätt slarvfel där jag råkat skriv width: 100px; istället för width: 100%;
+Första problemet jag stötte på var att navbaren blev jätteliten när jag skrollade. Det visade sig vara ett lätt slarvfel där jag råkat skriv width: 100px; istället för width: 100%;
+
+Jag hade lite problem först att implementera responsive web design men det löste sig till slut och nu är den optimerad för de flesta skärmstorlekarna.

@@ -1,0 +1,165 @@
+@import 'functions';
+
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;500&display=swap');
+
+
+html {
+    scroll-behavior: smooth // gör så att när man klickar på länkar inom sidan så hoppar den inte utan den skrollar smooth
+}
+
+body {
+    @include margin-padding-zero; // tar bort allt vitt runt webbsidan
+    height: 500vh;
+   
+}
+
+
+.header {   // Header with logo style
+    @include margin-padding-zero;
+    @include flex-center;
+    @include size (80vh,100%);
+    background-color: $cool-blue;
+    
+    
+}
+
+// navbar Style START
+
+#navbar {
+    @include margin-padding-zero;
+    @include flex-direction-justify(row, space-evenly);
+    @include size (6vw,100%);
+    
+    background-color: $cool-blue;  
+    overflow-y: hidden;
+    z-index: 1; // Gör så att navbaren hamnar över allt annat
+    transition: 0.5s; // gör animationen 0.5 sekunder lång
+}
+
+#navbar:hover { // ändrar färgen när man hovrar
+    background-color: $darker-cool-blue;
+}
+
+#navbar a { // stylen för länkarna i navbaren
+    @include yellowtxt;
+    text-align: center;
+    padding-top: 1.65vw;
+    transition: 0.4s;
+    
+}
+
+#navbar a:hover { // gör länken större när man hovrar över den
+    transform: scale(1.08);
+}
+
+.sticky {  // sticky klass som sätts på navbaren när man har skrollat till den
+    position: fixed;
+    top: 0;
+    opacity: 0.91;
+}
+
+// Navbar Style END
+
+
+// Pictures with text between info
+.img100-width {
+    width: 100%;
+} 
+
+.picture-txt {
+    @include text-color-size-weight-align(white,2vw, lighter, center);
+}
+
+// container som håller texten över de stora bilderna
+.txt-container-titleist {
+    @include opaque-square(black);
+    position: relative;
+    bottom: 52vw;
+    left: 54vw;
+}
+.txt-container-callaway {
+    @include opaque-square(black);
+    position: relative;
+    left: 31vw;
+    bottom: 15vw;
+}
+
+.txt-container-ping {
+    @include opaque-square(black);
+    position: relative;
+    left: 3vw;
+    bottom: 30vw;
+}
+
+.txt-container-cobra {
+    @include opaque-square(black);
+    position: relative;
+    left: 4vw;
+    bottom: 12vw;
+}
+// containers ^
+
+// End pictures between info
+
+.deadspace {
+    height: 5vw;
+    @include margin-padding-zero;
+    background-color: $cool-blue;
+}
+
+
+// For golf club and balls info style START
+
+.container { // Container för att hålla items flex wrap för att det ska se bra ut på mindre skärmstorlekar
+    @include flex-direction-justify(row, space-evenly);
+    padding-top: 2vw;
+    padding-bottom: 20vh;
+    flex-wrap: wrap; 
+    
+}
+
+.item { // item för att hålla information om golfprodukterna
+    @include border(10px, gray, none);
+    background-color: #f5f5f5;
+    box-shadow: 2px 3px 10px gray;
+    width: 37vh;
+    height: 65vh;
+    margin-top: 2vw;
+    transition: 0.5s;
+}
+
+.item:hover {  // När man hovrar blir item större och får en större skugga
+    transform: scale(1.08);
+    box-shadow: 2px 3px 20px black;
+    
+}
+
+.item img {  // Sätter bredden av bilden till 100% av containern
+    width: 100%;
+    @include border(10px,gray,none); // lägger till en lika stor border som "item" har för att bilden inte ska sticka ut
+}
+
+.item h1 { // sätter text stylen för alla h1 inom "item"
+    @include text-color-size-weight-align(black, 3vh, lighter, center);
+    text-align: center; 
+}
+
+.item p { // Sätter text stylen för alla p inom "item"
+    @include text-color-size-weight-align(black, 1.9vh, lighter, center);
+    
+}
+
+.item hr {
+    @include margin-padding-zero;
+}
+
+// golf club and balls info END
+
+.heading {  // Rubrik style för samtliga produkter
+    @include text-color-size-weight-align(black,7vh, normal, center);
+    position: relative;
+    margin-bottom: 3vw;
+    margin-top: 3vw; 
+}
