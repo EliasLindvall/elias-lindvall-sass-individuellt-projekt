@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="sass/style.css">
+
     <title>Custom Golf</title>
 
 </head>
+
 <body>
     <!--En header med loggan på-->
     <div class="header">
@@ -17,165 +19,204 @@
 
     <!--navbar med 4 länkar som länkar till platser på webbsidan-->
     <div id="navbar">
-        
+
         <a href="#titleist">Titleist</a>
         <a href="#callaway">Callaway</a>
         <a href="#ping">Ping</a>
         <a href="#cobra">Cobra</a>
-        
+
         <script src="js/script.js"></script>
     </div>
-    <div class="deadspace"></div> <!--Behövde fylla ut lite utrymme efter navbaren så gjorde denna-->
+    <div class="deadspace"></div>
+    <!--Behövde fylla ut lite utrymme efter navbaren så gjorde denna-->
     <!--Stor bild med text över-->
     <div>
-        <img class="img100-width" id="titleist" src="img/TitleistTSiDrivers.jpg" alt="TitleistDriver">
-        <div class="txt-container-titleist"><h1 class="picture-txt">EXPERIENCE NEW TITLEIST TSI DRIVERS</h1></div>
-    </div>
-    
-    <h1 class="heading">NEWEST TITLEIST COLLECTION</h1>
-    
-        <!--En container som håller alla produkter jag har valt att visa upp-->
-        <div class="container">
-            <!--Varje item har samma style förutom bilderna och texten-->
-            <div class="item">
-                <img src="img/tsi3.jpg" alt="tsi3 driver">
-                <hr>
-                <h1>TSi3 DRIVER</h1>
-                <p>For players who create more consistent contact and require more precise control over CG placement. With a new Adjustable CG Track Design for advanced speed-tuned performance.</p>
-            </div>
-            <div class="item">
-                <img src="img/t100iron.png" alt="t100 iron">
-                <hr>
-                <h1>T100 IRONS</h1>
-                <p>The refinements found in the new T100 irons are the product of thousands of hours in the hands of Titleist Tour Pros. The #1 irons model on Tour for a reason.</p>
-            </div>
-            <div class="item">
-                <img src="img/scotty_cameron.png" alt="Scotty Cameron">
-                <hr>
-                <h1>SCOTTY CAMERON</h1> 
-                <p>Solid milled stainless steel blade with performance balanced tungsten sole weighting, a thinner topline, soft tri-sole and re-designed plumbing neck for medium toe flow.</p>   
-            </div>
-            <div class="item">
-                <img src="img/prov1.jpg" alt="Prov1 ball">
-                <hr>
-                <h1>PRO V1</h1>
-                <p>Titleist® Pro V1® offers total performance and features long distance, very low long game spin, penetrating flight, Drop-and-Stop™ greenside control and very soft feel.</p>
-            </div>
+        <img class="img100-width" src="img/TitleistTSiDrivers.jpg" alt="TitleistDriver">
+        <div class="txt-container-titleist">
+            <h1 class="picture-txt">EXPERIENCE NEW TITLEIST TSI DRIVERS</h1>
         </div>
-    
+    </div>
 
-        <!--Resten av koden är samma sak fast med olika bilder och text-->
+    <h1 class="heading" id="titleist">NEWEST TITLEIST COLLECTION</h1>
+
+    <!--En container som håller alla produkter jag har valt att visa upp-->
+    <div class="container">
+        <!--Varje item har samma style förutom bilderna och texten-->
+        <div class="item">
+            <img src="img/tsi3.jpg" alt="tsi3 driver">
+            <hr>
+            <h1>TSi3 DRIVER</h1>
+            <p>For players who create more consistent contact and require more precise control over CG placement. With a
+                new Adjustable CG Track Design for advanced speed-tuned performance.</p>
+        </div>
+        <div class="item">
+            <img src="img/t100iron.png" alt="t100 iron">
+            <hr>
+            <h1>T100 IRONS</h1>
+            <p>The refinements found in the new T100 irons are the product of thousands of hours in the hands of
+                Titleist Tour Pros. The #1 irons model on Tour for a reason.</p>
+        </div>
+        <div class="item">
+            <img src="img/scotty_cameron.png" alt="Scotty Cameron">
+            <hr>
+            <h1>SCOTTY CAMERON</h1>
+            <p>Solid milled stainless steel blade with performance balanced tungsten sole weighting, a thinner topline,
+                soft tri-sole and re-designed plumbing neck for medium toe flow.</p>
+        </div>
+        <div class="item">
+            <img src="img/prov1.jpg" alt="Prov1 ball">
+            <hr>
+            <h1>PRO V1</h1>
+            <p>Titleist® Pro V1® offers total performance and features long distance, very low long game spin,
+                penetrating flight, Drop-and-Stop™ greenside control and very soft feel.</p>
+        </div>
+    </div>
+
+
+    <!--Resten av koden är samma sak fast med olika bilder och text-->
 
     <div>
-        <img class="img100-width" id="callaway" src="img/Callaway-Apex-21-irons.jpg" alt="Callaway apex pro irons">
-        <div class="txt-container-callaway"><h1 class="picture-txt">CALLAWAYS NEWEST APEX IRONS</h1></div>
+        <img class="img100-width" src="img/Callaway-Apex-21-irons.jpg" alt="Callaway apex pro irons">
+        <div class="txt-container-callaway">
+            <h1 class="picture-txt">CALLAWAYS NEWEST APEX IRONS</h1>
+        </div>
     </div>
 
-    <h1 class="heading">NEWEST CALLAWAY COLLECTION</h1>
-    
-    
-        <div class="container">
-            <div class="item">
-                <img src="img/callawayapex.jpg" alt="callaway apex iron">
-                <hr>
-                <h1>APEX PRO IRONS</h1>
-                <p>With an innovative A.I. face architecture and all new forged hollow body construction. Any scratch or single digit handicapper who wants speed and forgiveness in a players performance iron needs to try the Apex Pro 21.</p>
-            </div>
-            <div class="item">
-                <img src="img/callaway-epic-speed-2021-driver.jpg" alt="callaway epic speed driver">
-                <hr>
-                <h1>EPIC SPEED DRIVER</h1>
-                <p>Epic Speed will change the industry forever with a simple equation that creates a profound impact on driver technology and performance. We’re not just making drivers; we’re framing the future of speed.</p>
-            </div>
-            <div class="item">
-                <img src="img/callaway-hot-og.jfif" alt="White hot og #1">
-                <hr>
-                <h1>WHITE HOT OG#1</h1> 
-                <p>Solid milled stainless steel blade with performance balanced tungsten sole weighting, a thinner topline, soft tri-sole and re-designed plumbing neck for medium toe flow.</p>   
-            </div>
-            <div class="item">
-                <img src="img/callaway-chromsoft.png" alt="callaway ball">
-                <hr>
-                <h1>CHROME SOFT</h1>
-                <p>Titleist® Pro V1® offers total performance and features long distance, very low long game spin, penetrating flight, Drop-and-Stop™ greenside control and very soft feel.</p>
-            </div>
+    <h1 class="heading" id="callaway">NEWEST CALLAWAY COLLECTION</h1>
+
+
+    <div class="container">
+        <div class="item">
+            <img src="img/callawayapex.jpg" alt="callaway apex iron">
+            <hr>
+            <h1>APEX PRO IRONS</h1>
+            <p>With an innovative A.I. face architecture and all new forged hollow body construction. Any scratch or
+                single digit handicapper who wants speed and forgiveness in a players performance iron needs to try the
+                Apex Pro 21.</p>
         </div>
-    
+        <div class="item">
+            <img src="img/callaway-epic-speed-2021-driver.jpg" alt="callaway epic speed driver">
+            <hr>
+            <h1>EPIC SPEED DRIVER</h1>
+            <p>Epic Speed will change the industry forever with a simple equation that creates a profound impact on
+                driver technology and performance. We’re not just making drivers; we’re framing the future of speed.</p>
+        </div>
+        <div class="item">
+            <img src="img/callaway-hot-og.jfif" alt="White hot og #1">
+            <hr>
+            <h1>WHITE HOT OG#1</h1>
+            <p>Solid milled stainless steel blade with performance balanced tungsten sole weighting, a thinner topline,
+                soft tri-sole and re-designed plumbing neck for medium toe flow.</p>
+        </div>
+        <div class="item">
+            <img src="img/callaway-chromsoft.png" alt="callaway ball">
+            <hr>
+            <h1>CHROME SOFT</h1>
+            <p>Titleist® Pro V1® offers total performance and features long distance, very low long game spin,
+                penetrating flight, Drop-and-Stop™ greenside control and very soft feel.</p>
+        </div>
+    </div>
+
 
     <div>
-        <img class="img100-width" id="ping" src="img/ping-g425-irons.jpg" alt="Callaway apex pro irons">
-        <div class="txt-container-ping"><h1 class="picture-txt">THE FORGIVING PING G425 IRONS</h1></div>
+        <img class="img100-width" src="img/ping-g425-irons.jpg" alt="Callaway apex pro irons">
+        <div class="txt-container-ping">
+            <h1 class="picture-txt">THE FORGIVING PING G425 IRONS</h1>
+        </div>
     </div>
 
-    <h1 class="heading">NEWEST PING COLLECTION</h1>
+    <h1 class="heading" id="ping">NEWEST PING COLLECTION</h1>
 
-    
-        <div class="container">
-            <div class="item">
-                <img src="img/ping-g425-iron.jpg" alt="ping g425 iron">
-                <hr>
-                <h1>G425 IRONS</h1>
-                <p>The metal-wood-style, variable-thickness face and internal geometry increase ball speed and flexing for launching shots higher and farther with stopping power to hold greens.</p>
-            </div>
-            <div class="item">
-                <img src="img/ping-g425-driver.jpg" alt="ping g425 driver">
-                <hr>
-                <h1>G425 MAX DRIVER</h1>
-                <p>G425 MAX elevates the moment of inertia to PING’s highest level in history. Forgiveness comes mainly from a 26-gram tungsten movable weight, made possible by weight savings from advancements in the driver’s dragonfly crown technology.</p>
-            </div>
-            <div class="item">
-                <img src="img/ping-heppler-tomcat14.jpg" alt="ping heppler tomcat14 putter">
-                <hr>
-                <h1>HEPPLER PUTTER</h1> 
-                <p>The Heppler putters offer a machined, solid face for golfers who prefer a firmer impact feel and sound. Multi-material (steel and pressure-cast aluminum) mallets and mid-mallets provide extreme forgiveness and optimal CG for accuracy and consistency.</p>   
-            </div>
-            <div class="item">
-                <img src="img/ping_2019_tour-staff_rev_708x708.jpg" alt="Prov1 ball">
-                <hr>
-                <h1>TOUR STAFF BAG</h1>
-                <p>Pour over every premium-quality detail in the bag that PING tour players rely on, new for 2019. Nine pockets include two new zippered, expandable water-bottle pockets, a magnetic quick-access pocket, and two large apparel pockets. </p>
-            </div>
+
+    <div class="container">
+        <div class="item">
+            <img src="img/ping-g425-iron.jpg" alt="ping g425 iron">
+            <hr>
+            <h1>G425 IRONS</h1>
+            <p>The metal-wood-style, variable-thickness face and internal geometry increase ball speed and flexing for
+                launching shots higher and farther with stopping power to hold greens.</p>
         </div>
-    
+        <div class="item">
+            <img src="img/ping-g425-driver.jpg" alt="ping g425 driver">
+            <hr>
+            <h1>G425 MAX DRIVER</h1>
+            <p>G425 MAX elevates the moment of inertia to PING’s highest level in history. Forgiveness comes mainly from
+                a 26-gram tungsten movable weight, made possible by weight savings from advancements in the driver’s
+                dragonfly crown technology.</p>
+        </div>
+        <div class="item">
+            <img src="img/ping-heppler-tomcat14.jpg" alt="ping heppler tomcat14 putter">
+            <hr>
+            <h1>HEPPLER PUTTER</h1>
+            <p>The Heppler putters offer a machined, solid face for golfers who prefer a firmer impact feel and sound.
+                Multi-material (steel and pressure-cast aluminum) mallets and mid-mallets provide extreme forgiveness
+                and optimal CG for accuracy and consistency.</p>
+        </div>
+        <div class="item">
+            <img src="img/ping_2019_tour-staff_rev_708x708.jpg" alt="Prov1 ball">
+            <hr>
+            <h1>TOUR STAFF BAG</h1>
+            <p>Pour over every premium-quality detail in the bag that PING tour players rely on, new for 2019. Nine
+                pockets include two new zippered, expandable water-bottle pockets, a magnetic quick-access pocket, and
+                two large apparel pockets. </p>
+        </div>
+    </div>
+
 
     <div>
-        <img class="img100-width" id="cobra" src="img/cobra-t-rail.jpg" alt="cobra t-rail hybrid irons">
-        <div class="txt-container-cobra"><h1 class="picture-txt">SUPER FORGIVING COBRA HYBRID IRONS</h1></div>
+        <img class="img100-width" src="img/cobra-t-rail.jpg" alt="cobra t-rail hybrid irons">
+        <div class="txt-container-cobra">
+            <h1 class="picture-txt">SUPER FORGIVING COBRA HYBRID IRONS</h1>
+        </div>
     </div>
 
-    <h1 class="heading">NEWEST COBRA COLLECTION</h1>
+    <h1 class="heading" id="cobra">NEWEST COBRA COLLECTION</h1>
 
-    
-        <div class="container">
-            <div class="item">
-                <img src="img/cobra-trail.jpeg" alt="cobra t-rail iron">
-                <hr>
-                <h1>T-RAIL IRON 2.0</h1>
-                <p>The next evolution of T-Rail debuts Hollow Split Rail Technology, an advanced Baffler Rail design that utilizes hollow front rails to increase ball speed and launch. A hollow, hybrid-iron shape through the set provides extreme forgiveness to help you improve your game.
-            </div>
-            <div class="item">
-                <img src="img/cobra-king-radspeed-driver.jpg" alt="callaway epic speed driver">
-                <hr>
-                <h1>KING RADSPEED DRIVER</h1>
-                <p>The RADSPEED Driver features a traditional (460cc) shape and 28 grams of forward-biased RADIAL WEIGHTING to deliver our lowest spinning driver with radical ball speed.</p>
-            </div>
-            <div class="item">
-                <img src="img/cobra-supernova-putter.jpg" alt="king supernova putter">
-                <hr>
-                <h1>KING SUPERNOVA PUTTER</h1> 
-                <p>Solid milled stainless steel blade with performance balanced tungsten sole weighting, a thinner topline, soft tri-sole and re-designed plumbing neck for medium toe flow.</p>   
-            </div>
-            <div class="item">
-                <img src="img/king-tec-hyb-hero-min.jpg" alt="king tec hybrid">
-                <hr>
-                <h1>KING TEC HYBRID</h1>
-                <p>The KING TEC Hybrid features advanced technologies to create a hybrid that fits within the better player category. PWRSHELL Technology, a lightweight carbon crown and an adjustable weighting system delivers high launch and powerful ball speed.
 
-                </p>
-            </div>
+    <div class="container">
+        <div class="item">
+            <img src="img/cobra-trail.jpeg" alt="cobra t-rail iron">
+            <hr>
+            <h1>T-RAIL IRON 2.0</h1>
+            <p>The next evolution of T-Rail debuts Hollow Split Rail Technology, an advanced Baffler Rail design that
+                utilizes hollow front rails to increase ball speed and launch. A hollow, hybrid-iron shape through the
+                set provides extreme forgiveness to help you improve your game.
         </div>
+        <div class="item">
+            <img src="img/cobra-king-radspeed-driver.jpg" alt="callaway epic speed driver">
+            <hr>
+            <h1>KING RADSPEED DRIVER</h1>
+            <p>The RADSPEED Driver features a traditional (460cc) shape and 28 grams of forward-biased RADIAL WEIGHTING
+                to deliver our lowest spinning driver with radical ball speed.</p>
+        </div>
+        <div class="item">
+            <img src="img/cobra-supernova-putter.jpg" alt="king supernova putter">
+            <hr>
+            <h1>KING SUPERNOVA PUTTER</h1>
+            <p>Solid milled stainless steel blade with performance balanced tungsten sole weighting, a thinner topline,
+                soft tri-sole and re-designed plumbing neck for medium toe flow.</p>
+        </div>
+        <div class="item">
+            <img src="img/king-tec-hyb-hero-min.jpg" alt="king tec hybrid">
+            <hr>
+            <h1>KING TEC HYBRID</h1>
+            <p>The KING TEC Hybrid features advanced technologies to create a hybrid that fits within the better player
+                category. PWRSHELL Technology, a lightweight carbon crown and an adjustable weighting system delivers
+                high launch and powerful ball speed.
+
+            </p>
+        </div>
+    </div>
     <!--Footer-->
-    <footer>SOURCES:  <a href="https://www.titleist.com/">Titleist</a>  <a href="https://www.callawaygolf.com">Callaway</a>  <a href="https://www.ping.com">Ping</a>  <a href="https://www.cobragolf.com">Cobra</a>  <a href="#">Back to top</a></footer>
+    <footer>
+        <a style="pointer-events: none; cursor: default;">Sources: </a>
+        <a href="https://www.titleist.com/">Titleist</a>
+        <a href="https://www.callawaygolf.com">Callaway</a>
+        <a href="https://www.ping.com">Ping</a>
+        <a href="https://www.cobragolf.com">Cobra</a>
+        <a href="#">Back to top</a>
+    </footer>
 
 </body>
+
 </html>

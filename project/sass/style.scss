@@ -12,17 +12,18 @@ html {
 body {
     @include margin-padding-zero; // tar bort allt vitt runt webbsidan
     height: 500vh;
-   
+
 }
 
 
-.header {   // Header with logo style
+.header {
+    // Header with logo style
     @include margin-padding-zero;
     @include flex-center;
-    @include size (80vh,100%);
+    @include size (80vh, 100%);
     background-color: $cool-blue;
-    
-    
+
+
 }
 
 // navbar Style START
@@ -30,31 +31,36 @@ body {
 #navbar {
     @include margin-padding-zero;
     @include flex-direction-justify(row, space-evenly);
-    @include size (6vw,100%);
-    
-    background-color: $cool-blue;  
+    @include size (6vw, 100%);
+
+    background-color: $cool-blue;
     overflow-y: hidden;
-    z-index: 1; // Gör så att navbaren hamnar över allt annat
+    z-index: ind(menu, social); // Gör så att navbaren hamnar över allt annat
     transition: 0.5s; // gör animationen 0.5 sekunder lång
+
+    a {
+        // stylen för länkarna i navbaren
+        @include yellowtxt;
+        text-align: center;
+        padding-top: 1.65vw;
+        transition: 0.4s;
+
+    }
+
+    a:hover {
+        // gör länken större när man hovrar över den
+        transform: scale(1.08);
+    }
+
 }
 
-#navbar:hover { // ändrar färgen när man hovrar
+#navbar:hover {
+    // ändrar färgen när man hovrar
     background-color: $darker-cool-blue;
 }
 
-#navbar a { // stylen för länkarna i navbaren
-    @include yellowtxt;
-    text-align: center;
-    padding-top: 1.65vw;
-    transition: 0.4s;
-    
-}
-
-#navbar a:hover { // gör länken större när man hovrar över den
-    transform: scale(1.08);
-}
-
-.sticky {  // sticky klass som sätts på navbaren när man har skrollat till den
+.sticky {
+    // sticky klass som sätts på navbaren när man har skrollat till den
     position: fixed;
     top: 0;
     opacity: 0.91;
@@ -66,10 +72,10 @@ body {
 // Pictures with text between info
 .img100-width {
     width: 100%;
-} 
+}
 
 .picture-txt {
-    @include text-color-size-weight-align(white,2vw, lighter, center);
+    @include text-color-size-weight-align(white, 2vw, lighter, center);
 }
 
 // container som håller texten över de stora bilderna
@@ -79,6 +85,7 @@ body {
     bottom: 52vw;
     left: 54vw;
 }
+
 .txt-container-callaway {
     @include opaque-square(black);
     position: relative;
@@ -99,6 +106,7 @@ body {
     left: 4vw;
     bottom: 12vw;
 }
+
 // containers ^
 
 // End pictures between info
@@ -112,54 +120,77 @@ body {
 
 // For golf club and balls info style START
 
-.container { // Container för att hålla items flex wrap för att det ska se bra ut på mindre skärmstorlekar
+.container {
+    // Container för att hålla items flex wrap för att det ska se bra ut på mindre skärmstorlekar
     @include flex-direction-justify(row, space-evenly);
     padding-top: 2vw;
     padding-bottom: 20vh;
-    flex-wrap: wrap; 
-    
+    flex-wrap: wrap;
+
 }
 
-.item { // item för att hålla information om golfprodukterna
+.item {
+    // item för att hålla information om golfprodukterna
     @include border(10px, gray, none);
+    @include size(65vh, 37vh);
     background-color: #f5f5f5;
     box-shadow: 2px 3px 10px gray;
-    width: 37vh;
-    height: 65vh;
+    z-index: ind(menu, items);
     margin-top: 2vw;
     transition: 0.5s;
+
+    img {
+        // Sätter bredden av bilden till 100% av containern
+        width: 100%;
+        @include border(10px, gray, none); // lägger till en lika stor border som "item" har för att bilden inte ska sticka ut
+    }
+
+    h1 {
+        // sätter text stylen för alla h1 inom "item"
+        @include text-color-size-weight-align(black, 3vh, lighter, center);
+        text-align: center;
+    }
+
+    p {
+        // Sätter text stylen för alla p inom "item"
+        @include text-color-size-weight-align(black, 1.9vh, lighter, center);
+
+    }
+
+    hr {
+        @include margin-padding-zero;
+    }
 }
 
-.item:hover {  // När man hovrar blir item större och får en större skugga
+.item:hover {
+    // När man hovrar blir item större och får en större skugga
     transform: scale(1.08);
     box-shadow: 2px 3px 20px black;
-    
-}
-
-.item img {  // Sätter bredden av bilden till 100% av containern
-    width: 100%;
-    @include border(10px,gray,none); // lägger till en lika stor border som "item" har för att bilden inte ska sticka ut
-}
-
-.item h1 { // sätter text stylen för alla h1 inom "item"
-    @include text-color-size-weight-align(black, 3vh, lighter, center);
-    text-align: center; 
-}
-
-.item p { // Sätter text stylen för alla p inom "item"
-    @include text-color-size-weight-align(black, 1.9vh, lighter, center);
-    
-}
-
-.item hr {
-    @include margin-padding-zero;
 }
 
 // golf club and balls info END
 
-.heading {  // Rubrik style för samtliga produkter
-    @include text-color-size-weight-align(black,7vh, normal, center);
+.heading {
+    // Rubrik style för samtliga produkter
+    @include text-color-size-weight-align(black, 7vh, normal, center);
     position: relative;
     margin-bottom: 3vw;
-    margin-top: 3vw; 
+    margin-top: 3vw;
+}
+
+footer {
+    @include flex-center;
+    @include size(20vh, 100%);
+    @include text-color-size-weight-align($light-yellow, 2rem, light, center);
+    text-decoration: none;
+    background-color: $cool-blue;
+    z-index: ind(footer);
+
+
+    a {
+        text-decoration: none;
+        @include text-color-size-weight-align($light-yellow, 1.2rem, light, center);
+        border-right: 3px solid $light-yellow;
+        padding: 1vw;
+    }
 }

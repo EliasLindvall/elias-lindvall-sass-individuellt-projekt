@@ -9,3 +9,14 @@ $light-black: #222222;
 // FONTS
 $main-font: 'Playfair Display', serif; // font för all text
 // -------    
+
+// Z-index variabel
+
+$z-indices: (
+    "menu": (
+        "items": 2,
+        "social": 3,
+    ),
+    "main-content": 1,
+    "footer": -1,
+);
